@@ -55,6 +55,7 @@ const createNewUser = asyncHandler(async (req, res) => {
 // @route PATCH /users
 // @access Private
 const updateUser = asyncHandler(async (req, res) => {
+    console.log("req",req)
     const { id, username, roles, active, password } = req.body
 
     // Confirm data 
